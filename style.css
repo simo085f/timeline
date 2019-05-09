@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.scroller {
+  height: 900px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  position: relative;
+}
+
+.scroller #sections {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+  background-color: red;
+  opacity: 0;
+  outline: 3px dashed orange;
+  height: 900px;
+  width: 100%;
+}
+
+.scroller #boble2 {
+  scroll-snap-align: start;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
+
+.scroller #boble5 {
+  scroll-snap-align: start;
+}
+
+.scroller #boble9 {
+  scroll-snap-align: start;
+}
+
+/* #skyer {
+  position: absolute;
+  animation-name: skyer;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes skyer {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(1500px);
+  }
+} */
+
+#lillewave {
+  position: absolute;
+  animation-name: lillewave;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+
+@keyframes lillewa {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(800px);
+  }
+}
+
+#suppe {
+  position: absolute;
+  animation-name: suppe;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  z-index: 4;
+}
+
+@keyframes sue {
+  from {
+    transform: translateX(-0px);
+  }
+
+  to {
+    transform: translateX(1500px);
+  }
+}
+
+#faldeneplastik {
+  animation-name: flaske;
+  animation-duration: 45s;
+  animation-iteration-count: 1;
+}
+
+@keyframes flaske {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(2150px);
+  }
+}

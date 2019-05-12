@@ -193,7 +193,8 @@ function skjulModalinfo() {
   modalinfo.classList.remove("visinfo");
 }
 function scrollWin() {
-  window.scrollBy(0, 900);
+  console.log("Klikket...");
+  document.querySelector(".scroller").scrollBy(0, 900);
 }
 window.scrollBy({
   behavior: "smooth"

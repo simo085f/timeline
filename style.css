@@ -59,8 +59,7 @@ html {
 
 #modal,
 #modal3,
-#modal4,
-#modal_info {
+#modal4 {
   width: 37.5vw;
   height: 25vw;
   z-index: 19;
@@ -69,6 +68,20 @@ html {
   display: none;
   top: 25vw;
   left: 55%;
+  background-color: white;
+  transition: width 2s, height 2s, transform 2s;
+  pointer-events: none;
+}
+
+#modal_info {
+  width: 50vw;
+  height: 35vw;
+  z-index: 19;
+  text-align: center;
+  position: absolute;
+  display: none;
+  top: 15vw;
+  left: 25vw;
   background-color: white;
   transition: width 2s, height 2s, transform 2s;
   pointer-events: none;
@@ -460,7 +473,7 @@ html {
 
 i {
   position: absolute;
-  top: 800px;
+  top: 48vw;
   left: 50vw;
   font-size: 50px;
   color: white;
@@ -469,11 +482,33 @@ i {
 
 #pil {
   position: absolute;
-  top: 1700px;
+  top: 104vw;
   left: 50vw;
   font-size: 50px;
   color: white;
   z-index: 700;
+}
+
+i:hover,
+#pil:hover {
+  animation-name: pil;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation-direction: alternate;
+}
+
+@keyframes pil {
+  from {
+    transform: translateX(0px);
+    transform: scale(1);
+  }
+
+  to {
+    transform: translateX(0px);
+    transform: scale(1.1);
+  }
 }
 
 #fisk {
